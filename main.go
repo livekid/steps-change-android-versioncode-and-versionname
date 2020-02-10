@@ -79,10 +79,6 @@ func main() {
 	stepconf.Print(cfg)
 	fmt.Println()
 
-	if cfg.NewVersionName == nil && cfg.NewVersionCode == nil {
-		failf("Neither NewVersionCode nor NewVersionName are provided, however one of them is required.")
-	}
-
 	//
 	// find versionName & versionCode with regexp
 	fmt.Println()
